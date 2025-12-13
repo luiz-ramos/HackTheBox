@@ -1,2 +1,11 @@
+# HTB VPN login
 lab_luizramos.ovpn
+
+# Wordlists
 rockyou.txt
+
+# CherryTree backup files
+*.ctb~
+*.ctb~~
+*.ctb~~~
+
