@@ -1,0 +1,12 @@
+import re
+import sys
+from npbackup.__main__ import main
+if __name__ == '__main__':
+    # Block restricted flag
+    if '--external-backend-binary' in sys.argv:
+        print("Error: '--external-backend-binary' flag is restricted for use.")
+        sys.exit(1)
+
+    sys.argv[0] = re.sub(r'(-script\.pyw|\.exe)?$', '', sys.argv[0])
+    sys.exit(main())
+
